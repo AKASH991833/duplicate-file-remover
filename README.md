@@ -46,3 +46,12 @@ pip install winshell send2trash Pillow
 
 # duplicate-file-remover
  29b7694a292c30c7b4797c8a735206a3878ce7c1
+
+
+🔹 Required Files (for users)
+
+main.py ✅
+
+file_scanner.py ✅
+
+requirements.txt ✅
