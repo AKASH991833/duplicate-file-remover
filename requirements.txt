@@ -1,0 +1,8 @@
+# Required for Windows Recycle Bin functionality
+winshell
+
+# For sending files to trash (Linux/Mac)
+send2trash
+
+# For image comparison (optional)
+Pillow
