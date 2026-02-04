@@ -1,3 +1,4 @@
+ HEAD
 # 🧹 Duplicate File Remover  
 ![Python](https://img.shields.io/badge/Python-3.6%2B-blue)
 ![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-green)
@@ -42,3 +43,6 @@ Built with **Python 🐍 + Tkinter 🖥️**
 ### 1️⃣ Install Dependencies
 ```bash
 pip install winshell send2trash Pillow
+
+# duplicate-file-remover
+ 29b7694a292c30c7b4797c8a735206a3878ce7c1
