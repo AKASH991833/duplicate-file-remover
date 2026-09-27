@@ -1,57 +1,27 @@
- HEAD
-# 🧹 Duplicate File Remover  
-![Python](https://img.shields.io/badge/Python-3.6%2B-blue)
-![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-green)
-![GUI](https://img.shields.io/badge/GUI-Tkinter-orange)
-![License](https://img.shields.io/badge/License-Open%20Source-brightgreen)
+# Duplicate File Remover
 
-✨ **A safe and user-friendly GUI application to find and remove duplicate files from your computer.**  
-Built with **Python 🐍 + Tkinter 🖥️**
+A Python/Tkinter desktop app for scanning a folder, finding files with matching content and choosing which copies to move out of the way.
 
----
+## How it works
 
-## 🚀 Features
+1. Select a folder to scan.
+2. The scanner groups files by size and then compares MD5 hashes for possible duplicates.
+3. Review the duplicate groups and select the copies you want to remove.
+4. Selected files are moved to a `Deleted_Duplicates` folder inside the scanned folder. Review this folder before permanently deleting anything.
 
-- 📁 **Easy Folder Selection**  
-  Browse and select any folder to scan
+## Run locally
 
-- ⚡ **Fast Duplicate Detection**  
-  Uses **MD5 hashing** for accurate results
-
-- 🧠 **Smart Display**  
-  Shows **only duplicate files** (originals are hidden)
-
-- ☑️ **Selective Deletion**  
-  Choose which duplicate files to remove
-
-- 🛡️ **Safe Deletion**  
-  Files are moved to `Deleted_Duplicates` (no permanent delete)
-
-- 📊 **Progress Tracking**  
-  Real-time progress bar and status updates
-
-- 📄 **File Information**  
-  Shows file size & last modified date
-
-- 📦 **Batch Actions**  
-  Select All / Clear All in one click
-
----
-
-## 🔧 Installation
-
-### 1️⃣ Install Dependencies
 ```bash
-pip install winshell send2trash Pillow
+python -m pip install -r requirements.txt
+python main.py
+```
 
-# duplicate-file-remover
- 29b7694a292c30c7b4797c8a735206a3878ce7c1
+The app uses Python's Tkinter GUI. `requirements.txt` lists `winshell`, `send2trash` and `Pillow`; check that your environment supports the packages before installation.
 
+## Files
 
-🔹 Required Files (for users)
+- `main.py` - GUI and selected-file handling
+- `file_scanner.py` - file-size grouping and MD5 hashing
+- `requirements.txt` - listed dependencies
 
-main.py ✅
-
-file_scanner.py ✅
-
-requirements.txt ✅
+**Note:** MD5 is used here to group likely duplicate files; it is not a secure integrity check. Back up important files before moving or deleting them.
