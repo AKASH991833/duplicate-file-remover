@@ -23,5 +23,6 @@ The app uses Python's Tkinter GUI. `requirements.txt` lists `winshell`, `send2tr
 - `main.py` - GUI and selected-file handling
 - `file_scanner.py` - file-size grouping and MD5 hashing
 - `requirements.txt` - listed dependencies
+- `create_test_files.py` - creates sample duplicate files for testing
 
 **Note:** MD5 is used here to group likely duplicate files; it is not a secure integrity check. Back up important files before moving or deleting them.
